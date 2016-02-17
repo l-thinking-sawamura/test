@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>スライドショーサンプル 1</title>
+<link rel="stylesheet" href="css/slideshow_css/normalize.css" />
+<link rel="stylesheet" href="css/slideshow_css/slideshow_style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- Welcome or End Event-->
+<div id="third_message"><img src="image/weding3.jpg"></div>
+<div id="second_message"><img src="image/weding2.jpg"></div>
+<div id="first_message"><img src="image/weding1.jpg"></div>
+
+<!-- SlideShow HTML -->
+<div id="container">
+	<h1 id="content_title">&lt;jQuery&gt;<br />ボタンで制御できるスライダー 1</h1>
+	<p>（音楽同時制御機能付き）</p>
+	<div id="main">
+		<img src="image/slide1.png">
+		<img src="image/slide2.png">
+		<img src="image/slide3.png">
+		<img src="image/slide4.png">
+	</div>
+
+	<div id="thumbs"></div>
+
+	<audio id="mary_music" src="music/m1.mp3" controls></audio>
+
+	<div id="btn">
+		<!--
+		<button id="prev">&laquo; 前へ</button>
+		<button id="next">次へ &raquo;</button>
+		-->
+		<button id="play">再生</button>
+		<button id="stop">一時停止</button>
+		<button id="reverse">先頭に戻る</button>
+		<button id="end">終了</button>
+	</div>
+</div>
+
+<div id="end_message"><img src="image/weding4.jpg"></div>
+
+<script src="js/slideshow_js/myslider.js" type="text/javascript"></script>
+</body>
+</html>
